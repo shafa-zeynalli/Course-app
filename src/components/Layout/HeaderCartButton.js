@@ -7,8 +7,8 @@ import classes from './HeaderCartButton.module.css'
  
 const HeaderCartButton = (props) => {
   const [btnIsHighlighted, setBtnIsHighlighted] = useState(false);
-  const cartCtx = useContext(CartContext);
 
+  const cartCtx = useContext(CartContext);
   const { items } = cartCtx;
 
   const numberOfCartItems =  items.reduce((curNumber, item)=>{
